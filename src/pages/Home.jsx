@@ -143,11 +143,10 @@ Search
 <button
 type="button"
 onClick={() => setShowFavorites(!showFavorites)}
-className="bg-pink-500 hover:bg-pink-600 px-4 py-2 rounded text-sm"
+className="px-4 py-2 rounded text-sm transition-all duration-300 
+bg-gradient-to-r from-pink-500 to-red-500 hover:scale-105"
 >
-
-❤️ Favorites ({favorites.length})
-
+{showFavorites ? "⬅ Back" : `❤️ Favorites (${favorites.length})`}
 </button>
 
 </form>
